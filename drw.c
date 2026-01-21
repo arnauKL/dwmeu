@@ -176,6 +176,10 @@ drw_clr_create(Drw *drw, Clr *dest, const char *clrname)
 	                       DefaultColormap(drw->dpy, drw->screen),
 	                       clrname, dest))
 		die("error, cannot allocate color '%s'", clrname);
+
+    // Fix from dwm-fixboredrs patch. Just this line:
+    dest->pixel |= 0xff << 24;
+    // (https://dwm.suckless.org/patches/alpha/dwm-fixborders-6.2.diff)
 }
 
 /* Create color schemes. */

@@ -65,6 +65,10 @@ static const char *termcmd[]  = { "alacritty", NULL };
 static const char *upbrightness[] = { "brightnessctl", "--exponent=4", "set", "2%+", NULL };
 static const char *downbrightness[]   = { "brightnessctl", "--exponent=6", "set", "2%-", "-n", "1", NULL };
 
+static const char *upvol[] = { "wpctl", "set-volume", "@DEFAULT_AUDIO_SINK@", "0.02+", "-l", "1.0", NULL };
+static const char *downvol[] = { "wpctl", "set-volume", "@DEFAULT_AUDIO_SINK@", "0.02-", NULL };
+static const char *togglevol[] = { "wpctl", "set-mute", "@DEFAULT_AUDIO_SINK@", "toggle", NULL };
+
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
@@ -104,6 +108,10 @@ static const Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
 	{ 0,            XF86XK_MonBrightnessUp,    spawn,          {.v = upbrightness } },
 	{ 0,            XF86XK_MonBrightnessDown,  spawn,          {.v = downbrightness } },
+	// { 0,            XF86AudioRaiseVolume,      spawn,          {.v = upvol } },
+	{ 0,            XF86XK_AudioRaiseVolume,   spawn,          {.v = upvol } },
+	{ 0,            XF86XK_AudioLowerVolume,   spawn,          {.v = downvol } },
+	{ 0,            XF86XK_AudioMute,          spawn,          {.v = togglevol } },
 };
 
 /* button definitions */
