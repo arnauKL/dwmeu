@@ -1,3 +1,10 @@
+## Patches
+
+- dwm-actualfullscreen-20211013-cb3f58a.diff
+- dwm-removeborder-20220626-d3f93c7.diff
+- dwm-restartsig-20180523-6.2.diff
+
+
 dwm - dynamic window manager
 ============================
 dwm is an extremely fast, small, and dynamic window manager for X.
