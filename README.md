@@ -1,9 +1,16 @@
-## Patches
+### My Patches
 
 - dwm-actualfullscreen-20211013-cb3f58a.diff
 - dwm-removeborder-20220626-d3f93c7.diff
 - dwm-restartsig-20180523-6.2.diff
 
+To install on alpine linux:
+
+```sh
+apk add git make gcc g++ libx11-dev libxft-dev libxinerama-dev ncurses
+```
+
+> upstream readme:
 
 dwm - dynamic window manager
 ============================
