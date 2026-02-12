@@ -1,9 +1,9 @@
 ### My Patches
 
-- [actualfullscreen](dwm-actualfullscreen-20211013-cb3f58a.diff)
-- [removeborder](dwm-removeborder-20220626-d3f93c7.diff)
-- [restartsig](dwm-restartsig-20180523-6.2.diff)
-- [vanitygaps](patches/dwm-vanitygaps-20200610-f09418b.diff)
+- [actualfullscreen](patches/dwm-actualfullscreen-20211013-cb3f58a.diff)
+- [removeborder](patches/dwm-removeborder-20220626-d3f93c7.diff)
+- [restartsig](patches/dwm-restartsig-20180523-6.2.diff)
+- [vanitygaps](patches/patches/dwm-vanitygaps-20200610-f09418b.diff)
 
 To install on alpine linux:
 
